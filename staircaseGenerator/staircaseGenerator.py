@@ -19,7 +19,6 @@ class staircaseGeneratorUI(object):
     importlib.reload(s)
     s.staircaseGeneratorUI().show()
     '''
-
     windowName = "Stairs Generator"
 
     def __init__(self):
@@ -80,7 +79,6 @@ class staircaseGeneratorUI(object):
         cmds.text(self.labelGap, edit=True,label=str(gap))
         if self.stairs:
             self.stairs.changeGap(gap=gap)
-
 
     def reset(self, *args):
         self.stairs = None
